@@ -1,26 +1,59 @@
 
 .contain{
-    background-image: url("img/2.jpg");
     background-size: 1250px ;
+    background-image: url("img/2.jpg");
      margin: 3rem 3.3rem;
      height: 540px;
      position: relative;
 
 }
 
+
+
+.bdg{
+    position: absolute;
+    top:31.9rem;
+    left: 1.3rem;
+    right: 0; 
+    z-index: 1;
+     /* transform: rotate(180deg); */
+    
+}
+
 .contain:before {
-    content: "";
+    /* content: "dffsdfsdfsdfsdss";
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 10rem;
+    left: 0;
+    /* right: 0;  */
+    z-index: 2;  
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 480px; */
+    /* transform: rotate(180deg); */
+    /* background: rgba(255, 254, 254, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(223, 219, 219, 0.829) 50%) repeat scroll 0 0;  */
+    /* background-image:url('img/cld.png'); */
+
+}
+.contain::after {
+    /* content: "23456"; */
+    display: block;
+    position: absolute;
+    bottom: -1rem;
     left: 0;
     right: 0; 
     z-index: 1;  
-    width: auto;
-    height: 74px;
-    background: rgba(255, 254, 254, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(223, 219, 219, 0.829) 50%) repeat scroll 0 0; 
+    width: 100%;
+    height: 30%;
+    /* background-repeat: no-repeat; */
+    /* background-size: 380px; */
+    /* transform: rotate(180deg); */
+    background-image:url('img/could.png');
 
 }
+
 
 
 
@@ -72,8 +105,19 @@
     left: 0;
     right: 0;
 
+}
+.wraper-card-body{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -9rem;
+    left: 3rem  ;
+    right: 0;
+    /* width: 70%; */
 
 }
+
+
 
 
 @media (max-width: 750px) {
@@ -95,6 +139,26 @@
 }
 
 
+.bdg img{
+    position: absolute;
+    top:0;
+    right: 2.8rem; 
+    z-index: 1;
+    width: 515px;
+}
+
+.wraper-card-body{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -17rem;
+    left: -0.9rem  ;
+    right: 0;
+
+}
+.card-body:nth-child(1){
+    margin-left: 1rem;
+}
 }
 
 
